@@ -1,0 +1,80 @@
+$dark: #222;
+$secondary: #ccc;
+$clear: #fff;
+$font: "Rubik", Arial, Tahoma;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin texto {
+    font: 16px $font;
+    color: $dark;
+    text-align: justify;
+}
+
+p, h1 {
+    @include texto;
+}
+
+h1 {
+    font-size: 36px !important;
+}
+
+.header {
+    background: $dark;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    .header-logo {
+        img {
+            width: 200px;
+            margin-top: 0;
+        }
+    }
+    .header-menu {
+        float: right;
+        ul {
+            list-style: none;
+            li {
+                margin: 5px 15px;
+                font: 20px $font;
+                font-weight: lighter;
+                margin: 20px;
+                display: inline-block;
+                a {
+                    color: $secondary;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $clear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $dark;
+    color: $secondary;
+    padding: 20px;
+    p {
+        font-weight: lighter;
+        text-align: center;
+        color: $secondary;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
