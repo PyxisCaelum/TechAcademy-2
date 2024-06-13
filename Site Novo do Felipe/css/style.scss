@@ -12,7 +12,7 @@ $font: "Rubik", Arial, Tahoma;
 
 @mixin texto {
     font: 16px $font;
-    color: $dark;
+    color: $clear;
     text-align: justify;
 }
 
@@ -24,7 +24,14 @@ h1 {
     font-size: 36px !important;
 }
 
+body {
+    background-color: #292c30;
+}
+
 .navbar {
+    top: 0;
+    width: 100%;
+    z-index: 1;
     background: $dark;
     .navbar-brand img {
         height: 100px;
@@ -64,7 +71,6 @@ h1 {
 }
 
 .footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background: $dark;
@@ -113,20 +119,10 @@ a.btn.btn-info {
 }
 
 .erro404con {
-    width: 100%;
-    height: 100%;
-    .erroimg { 
-        display: block;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media only screen and (max-width: 480px) {
+    text-align: center;
     .erroimg {
-        display: none;
+        padding: 8%;
+        margin: 0;
     }
 }
 
@@ -135,5 +131,14 @@ a.dropdown-item {
         background-color: #14171a;
     } &:active {
         background-color: #0d0f11;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .erroimg {
+        width: 100%;
+    }
+    .d-block {
+        height: 200px;
     }
 }
