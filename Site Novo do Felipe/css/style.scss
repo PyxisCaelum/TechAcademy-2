@@ -142,3 +142,30 @@ a.dropdown-item {
         height: 200px;
     }
 }
+
+.sobre {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 15%;
+    margin-bottom: 22%;
+    text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #292c30;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #14171a;
+    border: 1px solid #181b1f;
+    border-radius: 10px;
+  }
+

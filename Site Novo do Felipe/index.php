@@ -43,12 +43,13 @@
                             Games
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="index.php?pagina=1">Souls in the Dark</a></li>
-                            <li><a class="dropdown-item" href="index.php?pagina=2">Ghost of Tsushima</a></li>
-                            <li><a class="dropdown-item" href="index.php?pagina=3">ULTRAKILL</a></li>
-                            <li><a class="dropdown-item" href="index.php?pagina=4">Ghosts of Tabor</a></li>
+                            <?php
+                            foreach ($dadosJogos as $dados) {
+                                echo "<li><a class='dropdown-item' href='game/{$dados->id}'>{$dados->nome}</a></li>";
+                            }
+                            ?>
                         </ul>
-                    </li>
+                    </li>   
                 </ul>
                 <div class="d-flex">
                     <a href="index.php?pagina=contato" title="Contato" class="btn btn-info">
@@ -80,8 +81,8 @@
     <script src="js\bootstrap.bundle.min.js"></script>
     <script>
         function giro() {
-   document.getElementById("dir").classList.toggle('giro');
-    }
+            document.getElementById("dir").classList.toggle('giro');
+        }
     </script>
 </body>
 
