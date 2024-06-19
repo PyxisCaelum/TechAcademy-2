@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/site/felipesite/Site%20Novo%20do%20Felipe/TechAcademy-2/imagens/";
+    $path = "http://localhost/site/felipesite/PastaTech/TechAcademy-2/Escapism/imagens/";
 
     $games[1] = array("id"=>1, "nome"=>"Souls in the Dark", "descricao"=>"<p>Souls in The Dark é um jogo de aventura e sobrevivência que se passa em um mundo sombrio e misterioso,
     onde o jogador enfrenta desafios e perigos em ambientes obscuros e hostis.</p>",

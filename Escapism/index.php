@@ -20,6 +20,13 @@
 </head>
 
 <body>
+    <?php
+    $url = "http://localhost/site/felipesite/PastaTech/TechAcademy-2/Escapism/api/games.php/";
+
+    $dadosApi = file_get_contents($url);
+
+    $dadosJogos = json_decode($dadosApi);
+    ?>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php">
@@ -45,11 +52,11 @@
                         <ul class="dropdown-menu">
                             <?php
                             foreach ($dadosJogos as $dados) {
-                                echo "<li><a class='dropdown-item' href='game/{$dados->id}'>{$dados->nome}</a></li>";
+                                echo "<li><a class='dropdown-item' href='paginas/{$dados->id}'>{$dados->nome}</a></li>";
                             }
                             ?>
                         </ul>
-                    </li>   
+                    </li>
                 </ul>
                 <div class="d-flex">
                     <a href="index.php?pagina=contato" title="Contato" class="btn btn-info">

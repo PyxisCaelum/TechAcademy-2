@@ -122,4 +122,10 @@ a.dropdown-item:active {
   border: 1px solid #181b1f;
   border-radius: 10px; }
 
+.carousel-inner {
+  width: 72%;
+  margin: 0 auto; }
+  .carousel-inner .carousel-item img {
+    border-radius: 15px; }
+
 /*# sourceMappingURL=style.css.map */

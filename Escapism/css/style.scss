@@ -169,3 +169,10 @@ a.dropdown-item {
     border-radius: 10px;
   }
 
+.carousel-inner {
+    width: 72%;
+    margin: 0 auto;
+    .carousel-item img {
+        border-radius: 15px;
+    }
+}
