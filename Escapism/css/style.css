@@ -128,4 +128,9 @@ a.dropdown-item:active {
   .carousel-inner .carousel-item img {
     border-radius: 15px; }
 
+.Container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=style.css.map */
