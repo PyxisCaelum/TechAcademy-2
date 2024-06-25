@@ -2,13 +2,16 @@
   margin: 0;
   padding: 0; }
 
-p, h1 {
+p, h1, h2 {
   font: 16px "Rubik", Arial, Tahoma;
   color: #fff;
   text-align: justify; }
 
 h1 {
   font-size: 36px !important; }
+
+h2 {
+  font-size: 26px; }
 
 body {
   background-color: #292c30; }

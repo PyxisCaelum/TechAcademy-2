@@ -8,6 +8,7 @@ $jsonGames = file_get_contents($apiGames);
 $dadosBanner = json_decode($jsonBanner);
 $dadosGames = json_decode($jsonGames);
 ?>
+<h1>Jogos de terceiros:</h1>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -37,3 +38,13 @@ $dadosGames = json_decode($jsonGames);
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+<h2>Jogos autorais:</h2>
+<div class="card" style="width: 18rem;">
+  <img src="imagens/JogoLogo.png" class="card-img-top" alt="...">
+  <div class="card-body bg-dark">
+    <h5 class="card-title text-light">Souls in the Dark</h5>
+    <p class="card-text">Souls in The Dark é um jogo de aventura e sobrevivência que se passa em um mundo sombrio e misterioso,
+    na qual o jogador enfrenta desafios e perigos em ambientes obscuros e hostis.</p>
+    <a href="Souls in the Dark/index.html" target="_blank" class="btn btn-primary">Jogar</a>
+  </div>
+</div>
